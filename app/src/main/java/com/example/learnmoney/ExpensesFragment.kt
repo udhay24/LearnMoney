@@ -6,6 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.lifecycle.Observer
+import com.example.learnmoney.database.AppDatabase
+import com.example.learnmoney.database.TransactionDao
 
 class ExpensesFragment : Fragment() {
 
@@ -19,15 +23,5 @@ class ExpensesFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_expenses, container, false)
-    }
-
-    fun printToast() {
-
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            ExpensesFragment()
     }
 }

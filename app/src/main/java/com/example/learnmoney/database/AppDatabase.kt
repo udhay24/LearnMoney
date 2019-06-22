@@ -10,19 +10,21 @@ abstract class AppDatabase : RoomDatabase(){
 
     abstract fun getTransactionDao(): TransactionDao
 
-    private lateinit var INSTANCE: AppDatabase
+    companion object {
 
-    fun getDatabase(context: Context) : AppDatabase {
-        return if (::INSTANCE.isInitialized) {
-            INSTANCE
-        } else {
-            INSTANCE = Room.databaseBuilder(
-                context, AppDatabase::class.java, "transaction.db"
-            )
-                .allowMainThreadQueries()
-                .build()
-            INSTANCE
+        private lateinit var INSTANCE: AppDatabase
+
+        fun getDatabase(context: Context) : AppDatabase {
+            return if (::INSTANCE.isInitialized) {
+                INSTANCE
+            } else {
+                INSTANCE = Room.databaseBuilder(
+                    context, AppDatabase::class.java, "transaction.db"
+                )
+                    .allowMainThreadQueries()
+                    .build()
+                INSTANCE
+            }
         }
     }
-
 }
