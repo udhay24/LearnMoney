@@ -11,6 +11,6 @@ object TransactionConstant {
     }
 
     enum class IncomeType{
-        SALARY, AWARDS, GRANTS, SALE, RENTAL
+        SALARY, REWARDS, INVESTMENTS, COUPONS, SALES
     }
 }

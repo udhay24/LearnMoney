@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class Expenses : Fragment() {
+class ExpensesFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +21,13 @@ class Expenses : Fragment() {
         return inflater.inflate(R.layout.fragment_expenses, container, false)
     }
 
+    fun printToast() {
+
+    }
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            Expenses()
+            ExpensesFragment()
     }
 }
