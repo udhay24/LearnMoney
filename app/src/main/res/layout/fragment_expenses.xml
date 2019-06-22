@@ -9,72 +9,72 @@
     <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp" tools:src="@tools:sample/avatars"
-            android:id="@+id/food_image_view" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            android:id="@+id/salary_image_view" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/rewards_image_view"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="32dp"
             app:srcCompat="@drawable/icons8_food_96"/>
     <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp" tools:src="@tools:sample/avatars"
-            android:id="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/food_image_view" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/rewards_image_view"
+            app:layout_constraintStart_toEndOf="@+id/salary_image_view" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/investment_image_view" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="32dp" android:layout_marginStart="8dp" app:srcCompat="@drawable/icons_money"/>
     <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp" tools:src="@tools:sample/avatars"
-            android:id="@+id/imageView4"
-            app:layout_constraintStart_toEndOf="@+id/imageView5" app:layout_constraintHorizontal_bias="0.5"
+            android:id="@+id/coupons_image_view"
+            app:layout_constraintStart_toEndOf="@+id/investment_image_view" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="32dp" android:layout_marginStart="8dp" app:srcCompat="@drawable/icons_home_page"/>
     <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp" tools:src="@tools:sample/avatars"
-            android:id="@+id/imageView5"
-            app:layout_constraintStart_toEndOf="@+id/imageView3" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView4" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/investment_image_view"
+            app:layout_constraintStart_toEndOf="@+id/rewards_image_view" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/coupons_image_view" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="32dp" android:layout_marginStart="8dp"
             app:srcCompat="@drawable/icons_public_transportation"/>
     <TextView
             android:text="Food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3" app:layout_constraintStart_toStartOf="@+id/food_image_view"
-            app:layout_constraintEnd_toEndOf="@+id/food_image_view" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/food_image_view"/>
+            android:id="@+id/textView3" app:layout_constraintStart_toStartOf="@+id/salary_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/salary_image_view" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/salary_image_view"/>
     <TextView
             android:text="Bills"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView5" app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+            android:id="@+id/textView5" app:layout_constraintStart_toStartOf="@+id/rewards_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/rewards_image_view" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/rewards_image_view"/>
     <TextView
             android:text="Transportation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView7" app:layout_constraintStart_toStartOf="@+id/imageView5"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"/>
+            android:id="@+id/textView7" app:layout_constraintStart_toStartOf="@+id/investment_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/investment_image_view" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/investment_image_view"/>
     <TextView
             android:text="@string/menu_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView8" app:layout_constraintStart_toStartOf="@+id/imageView4"
-            app:layout_constraintEnd_toEndOf="@+id/imageView4" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+            android:id="@+id/textView8" app:layout_constraintStart_toStartOf="@+id/coupons_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/coupons_image_view" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/coupons_image_view"/>
     <ImageView
             android:src="@drawable/icon_game_controller"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:id="@+id/imageView6" android:layout_marginTop="32dp"
+            android:id="@+id/sales_image_view" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintStart_toStartOf="@+id/food_image_view"/>
+            app:layout_constraintStart_toStartOf="@+id/salary_image_view"/>
     <TextView
             android:text="Entertaiment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="@+id/imageView6"
-            app:layout_constraintEnd_toEndOf="@+id/imageView6" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6"/>
+            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="@+id/sales_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/sales_image_view" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/sales_image_view"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
