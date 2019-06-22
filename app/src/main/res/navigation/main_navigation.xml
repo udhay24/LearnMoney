@@ -10,14 +10,24 @@
 	</fragment>
 	<fragment android:id="@+id/expensesFragment" android:name="com.example.learnmoney.ExpensesFragment"
 			  android:label="fragment_expenses" tools:layout="@layout/fragment_expenses">
-		<action android:id="@+id/action_expensesFragment_to_customDialogFragment"
-				app:destination="@id/customDialogFragment"/>
+		<action
+				android:id = "@+id/action_expensesFragment_to_customDialogFragment"
+				app:destination = "@id/customDialogFragment"
+				app:enterAnim = "@anim/nav_default_enter_anim"
+				app:exitAnim = "@anim/nav_default_exit_anim"
+				app:popEnterAnim = "@anim/nav_default_pop_enter_anim"
+				app:popExitAnim = "@anim/nav_default_pop_exit_anim"
+				/>
 	</fragment>
 	<fragment android:id="@+id/customDialogFragment" android:name="com.example.learnmoney.CustomDialogFragment"
 			  android:label="CustomDialogFragment">
 		<action
 				android:id = "@+id/action_customDialogFragment_to_mainFragment"
 				app:destination = "@id/mainFragment"
+				/>
+		<argument
+				android:name = "TransactionType"
+				app:argType = "string"
 				/>
 	</fragment>
 </navigation>

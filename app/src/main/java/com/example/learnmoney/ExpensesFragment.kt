@@ -26,7 +26,8 @@ class ExpensesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         salary_image_view.setOnClickListener {
-            findNavController().navigate(R.id.customDialogFragment)
+            val directions = ExpensesFragmentDirections.actionExpensesFragmentToCustomDialogFragment(TransactionConstant.TransactionType.EXPENSE.toString())
+            findNavController().navigate(directions)
         }
     }
 }
