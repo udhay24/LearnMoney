@@ -8,8 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.learnmoney.database.AppDatabase
 import com.example.learnmoney.database.TransactionDao
+import kotlinx.android.synthetic.main.fragment_expenses.*
 
 class ExpensesFragment : Fragment() {
 
@@ -23,5 +25,12 @@ class ExpensesFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_expenses, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        food_image_view.setOnClickListener {
+            findNavController().navigate(R.id.customDialogFragment)
+        }
     }
 }

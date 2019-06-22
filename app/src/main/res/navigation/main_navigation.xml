@@ -9,5 +9,15 @@
 		<action android:id="@+id/action_mainFragment_to_expenses" app:destination="@id/expensesFragment"/>
 	</fragment>
 	<fragment android:id="@+id/expensesFragment" android:name="com.example.learnmoney.ExpensesFragment"
-			  android:label="fragment_expenses" tools:layout="@layout/fragment_expenses"/>
+			  android:label="fragment_expenses" tools:layout="@layout/fragment_expenses">
+		<action android:id="@+id/action_expensesFragment_to_customDialogFragment"
+				app:destination="@id/customDialogFragment"/>
+	</fragment>
+	<fragment android:id="@+id/customDialogFragment" android:name="com.example.learnmoney.CustomDialogFragment"
+			  android:label="CustomDialogFragment">
+		<action
+				android:id = "@+id/action_customDialogFragment_to_mainFragment"
+				app:destination = "@id/mainFragment"
+				/>
+	</fragment>
 </navigation>
