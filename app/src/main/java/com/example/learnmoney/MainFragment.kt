@@ -21,10 +21,6 @@ class MainFragment : Fragment() {
 
     private lateinit var transactionDao: TransactionDao
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -45,7 +41,7 @@ class MainFragment : Fragment() {
         transactionDao.getAllTransactions().observe(this, Observer {
             income_text_view.text = "${calculateIncome(it)}"
             expenses_text_view.text = "${calculateExpense(it)}"
-            balance_text_view.text = "${calculateBalanace(it)}"
+            balance_text_view.text = "${calculateBalance(it)}"
 
         })
     }
@@ -70,7 +66,7 @@ class MainFragment : Fragment() {
         return expense
     }
 
-    private fun calculateBalanace(transactions: List<Transaction>) : Long {
+    private fun calculateBalance(transactions: List<Transaction>) : Long {
         var balance: Long = 0
         transactions.forEach {
             balance += it.amount
