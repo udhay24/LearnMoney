@@ -60,7 +60,7 @@
                             android:scaleType="fitXY"
                             android:layout_alignParentBottom="true"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/cirle_p"
+                            android:src="@drawable/circle_p"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"/>
 
