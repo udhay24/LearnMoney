@@ -23,9 +23,12 @@
 			  android:label="CustomDialogFragment">
 		<action
 				android:id = "@+id/action_customDialogFragment_to_mainFragment"
-				app:destination = "@id/mainFragment"
+				app:destination = "@+id/mainFragment"
 				app:popUpTo = "@+id/mainFragment"
-				app:popUpToInclusive = "true"
+				app:exitAnim = "@anim/nav_default_exit_anim"
+				app:popEnterAnim = "@anim/nav_default_pop_enter_anim"
+				app:popExitAnim = "@anim/nav_default_pop_exit_anim"
+				app:enterAnim = "@anim/nav_default_enter_anim"
 				/>
 		<argument
 				android:name = "TransactionType"
