@@ -11,6 +11,8 @@
 			android:supportsRtl = "true"
 			android:theme = "@style/AppTheme"
 			>
+		<activity android:name = ".ProfileActivity">
+		</activity>
 		<activity android:name = ".Question">
 		</activity>
 		<activity android:name = ".LevelOne">
