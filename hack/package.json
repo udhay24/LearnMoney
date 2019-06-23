@@ -1,0 +1,16 @@
+{
+  "name": "hack",
+  "version": "1.0.0",
+  "description": "simmple hack",
+  "main": "apps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
+  "author": "Aditya Sharma",
+  "license": "ISC"
+}
