@@ -7,26 +7,6 @@
 		xmlns:app = "http://schemas.android.com/apk/res-auto"
 		tools:context = ".MFMune">
 	
-	
-	<TextView
-			android:textSize="32sp"
-			android:layout_width="match_parent"
-			android:layout_height="50dp"
-			android:text="Mutual Funds"
-			android:textStyle="bold"
-			android:layout_marginTop="20dp"
-			android:layout_marginStart="60dp"/>
-	
-	<ImageView
-			android:scaleType="fitXY"
-			android:layout_marginStart="20dp"
-			android:layout_marginTop="23dp"
-			android:layout_marginEnd="20dp"
-			android:src="@drawable/icon_back_button"
-			android:layout_width="30dp"
-			android:layout_height="40dp"/>
-	
-	
 	<ScrollView
 			android:layout_marginTop="70dp"
 			android:layout_width = "match_parent"
