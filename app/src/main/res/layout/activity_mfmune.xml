@@ -147,7 +147,7 @@
 						android:elevation="10dp"
 						android:layout_width = "match_parent"
 						android:layout_height = "match_parent"
-						android:background="@drawable/cirle_p">
+						android:background="@drawable/grey_cirlce_gradient">
 					
 					<TextView
 							android:textStyle="bold"
@@ -194,7 +194,7 @@
 						android:elevation="10dp"
 						android:layout_width = "match_parent"
 						android:layout_height = "match_parent"
-						android:background="@drawable/cirle_p">
+						android:background="@drawable/grey_cirlce_gradient">
 					
 					<TextView
 							android:textStyle="bold"
@@ -241,7 +241,7 @@
 						android:elevation="10dp"
 						android:layout_width = "match_parent"
 						android:layout_height = "match_parent"
-						android:background="@drawable/cirle_p">
+						android:background="@drawable/grey_cirlce_gradient">
 					
 					<TextView
 							android:textStyle="bold"
