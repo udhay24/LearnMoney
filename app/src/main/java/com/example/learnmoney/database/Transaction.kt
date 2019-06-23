@@ -7,7 +7,7 @@ import java.time.Year
 
 @Entity
 data class Transaction(
-    @PrimaryKey(autoGenerate = true) val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
     @ColumnInfo(name = "month") var month: Int = 0,
     @ColumnInfo(name = "year") var year: Int = 0,
     @ColumnInfo(name = "transaction_name") var transactionName: String = "",
