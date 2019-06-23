@@ -7,6 +7,7 @@ import android.os.Handler
 import android.util.TypedValue
 import android.view.View
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_level_one.*
 import org.w3c.dom.Text
 
 class LevelOne : AppCompatActivity() {
@@ -66,7 +67,9 @@ class LevelOne : AppCompatActivity() {
 
         }
 
-
+        back_image.setOnClickListener {
+            onBackPressed()
+        }
     }
 
 

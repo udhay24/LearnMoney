@@ -16,15 +16,15 @@
 		<activity android:name = ".Question">
 		</activity>
 		<activity android:name = ".LevelOne">
+		</activity>
+		<activity android:name = ".MFMune">
+		</activity>
+		<activity android:name = ".Home">
 			<intent-filter>
 				<action android:name = "android.intent.action.MAIN" />
 				
 				<category android:name = "android.intent.category.LAUNCHER" />
 			</intent-filter>
-		</activity>
-		<activity android:name = ".MFMune">
-		</activity>
-		<activity android:name = ".Home">
 		</activity>
 		<activity android:name = ".SignUp">
 		</activity>

@@ -41,14 +41,15 @@
 						/>
 				
 				<ImageView
+						android:id="@+id/back_image"
 						android:tint="@color/black"
 						android:scaleType="fitXY"
 						android:layout_marginStart="20dp"
 						android:layout_marginTop="23dp"
 						android:layout_marginEnd="20dp"
 						android:src="@drawable/icon_back_button"
-						android:layout_width="40dp"
-						android:layout_height="40dp"/>
+						android:layout_width="24dp"
+						android:layout_height="24dp"/>
 			
 			
 			</RelativeLayout>
