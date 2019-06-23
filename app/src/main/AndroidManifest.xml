@@ -11,6 +11,8 @@
 			android:supportsRtl = "true"
 			android:theme = "@style/AppTheme"
 			>
+		<activity android:name = ".Question">
+		</activity>
 		<activity android:name = ".LevelOne">
 			<intent-filter>
 				<action android:name = "android.intent.action.MAIN" />
@@ -21,7 +23,6 @@
 		<activity android:name = ".MFMune">
 		</activity>
 		<activity android:name = ".Home">
-
 		</activity>
 		<activity android:name = ".SignUp">
 		</activity>
